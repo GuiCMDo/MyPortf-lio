@@ -1,11 +1,11 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         //Conta bancária
 
         //Variáveis
-        Scanner sc = new Scanner(System.in);
+        //Scanner sc = new Scanner(System.in);
         String nome = "Guilherme Dourado";
         String tipoDeConta = "Conta-Corrente";
         double saldo = 5000.00;
