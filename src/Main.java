@@ -9,26 +9,26 @@ public class Main {
         String nome = "Guilherme Dourado";
         String tipoDeConta = "Conta-Corrente";
         double saldo = 5000.00;
+        int opcao = 0;
 
         //Inicializar dados do cliente;
         System.out.println("****************************************************");
-        System.out.println("Dados Iniciais do cliente");
-        System.out.println(nome);
-        System.out.println(tipoDeConta);
-        System.out.println("R$ " + saldo);
-        System.out.println("****************************************************");
-        
+        System.out.println("\nNome do cliente: " + nome);
+        System.out.println("Tipo de conta: " + tipoDeConta);
+        System.out.println("Saldo atual: R$ " + saldo);
+        System.out.println("\n****************************************************");
+
+
+        String menu= """
+                \n** OPERAÇÕES **
+                1 - Consultar saldos
+                2 - Receber valor
+                3 - Transferir valor
+                4 - Sair
+                """;
         //Criação do Menu de opções
-        int opcao;
-
-        for (int i = 0;i < 4; i++) {
-            System.out.println("                          ");
-            System.out.println("Operações: ");
-            System.out.println("1 - Consultar saldos ");
-            System.out.println("2 - Receber valor ");
-            System.out.println("3 - Transferir valor ");
-            System.out.println("4 - Sair ");
-
+        while (opcao != 4) {
+            System.out.println(menu);
             System.out.println("Digite a opção desejada: ");
             opcao = sc.nextInt();
 
